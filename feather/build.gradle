@@ -1,4 +1,5 @@
 apply plugin: 'java'
+apply plugin: 'maven-publish'
 
 dependencies {
     implementation project(':feather-annotations')
@@ -6,3 +7,10 @@ dependencies {
     testImplementation 'junit:junit:4.12'
 }
 
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+}

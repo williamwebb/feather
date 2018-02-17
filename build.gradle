@@ -17,23 +17,12 @@
 buildscript {
     repositories {
         jcenter()
-        google()
-        maven {
-            url 'https://maven.fabric.io/public'
-        }
     }
-    dependencies {
-
-    }
+    dependencies {  }
 }
 
 allprojects {
     repositories {
         jcenter()
-        google()
     }
-}
-
-ext {
-
 }
